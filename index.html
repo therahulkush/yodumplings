@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo Dumplings | World Street Fusion</title>
+    <meta name="description"
+        content="World Street Fusion cuisine where dumplings from around the globe are reimagined with a fearless twist.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D92323', // Bold Red
+                            dark: '#121212', // Smoky Black
+                            gray: '#1E1E1E', // Dark Grey
+                            gold: '#F5A623', // Street Food Gold
+                            light: '#F5F5F5', // Off-white
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Bebas Neue', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to bottom, rgba(18,18,18,0.7), rgba(18,18,18,0.9)), url('https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2629&auto=format&fit=crop')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-brand-dark text-brand-light font-sans antialiased selection:bg-brand-red selection:text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-brand-red/20 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#"
+                        class="font-display text-4xl text-brand-red tracking-wider hover:text-brand-gold transition-colors">YO
+                        DUMPLINGS</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="hover:text-brand-red px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Our
+                            Story</a>
+                        <a href="#menu"
+                            class="hover:text-brand-red px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Menu</a>
+                        <a href="#location"
+                            class="hover:text-brand-red px-3 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition-colors">Location</a>
+                        <a href="#catering"
+                            class="bg-brand-red hover:bg-red-700 text-white px-4 py-2 rounded-sm text-sm font-bold uppercase tracking-widest transition-all clip-path-slant">Catering</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden md:hidden bg-brand-gray border-t border-brand-red/20" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about"
+                    class="text-gray-300 hover:text-brand-red block px-3 py-2 rounded-md text-base font-bold uppercase">Our
+                    Story</a>
+                <a href="#menu"
+                    class="text-gray-300 hover:text-brand-red block px-3 py-2 rounded-md text-base font-bold uppercase">Menu</a>
+                <a href="#location"
+                    class="text-gray-300 hover:text-brand-red block px-3 py-2 rounded-md text-base font-bold uppercase">Location</a>
+                <a href="#catering"
+                    class="text-brand-gold hover:text-white block px-3 py-2 rounded-md text-base font-bold uppercase">Catering</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Placeholder -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home"
+            class="relative h-screen flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-black/40"></div>
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto" id="hero-content">
+                <h2
+                    class="text-brand-gold font-display text-2xl md:text-4xl tracking-[0.2em] mb-4 uppercase animate-fade-in-up">
+                    World Street Fusion</h2>
+                <h1
+                    class="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-white mb-6 leading-none shadow-xl tracking-tighter uppercase animate-fade-in-up delay-100">
+                    Crazy <span class="text-brand-red">Dumplings</span>
+                </h1>
+                <p
+                    class="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed animate-fade-in-up delay-200">
+                    Southern Smokehouse × Asian Technique. <br class="hidden md:inline">Bold flavors reimagined with a
+                    fearless twist.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
+                    <a href="#menu"
+                        class="group relative px-8 py-4 bg-brand-red text-white font-heading font-bold uppercase tracking-widest overflow-hidden hover:bg-red-700 transition-all duration-300 w-full md:w-auto">
+                        <span class="relative z-10 group-hover:tracking-[0.15em] transition-all">View Menu</span>
+                    </a>
+                    <a href="#location"
+                        class="group px-8 py-4 border-2 border-white text-white font-heading font-bold uppercase tracking-widest hover:bg-white hover:text-brand-dark transition-all duration-300 w-full md:w-auto">
+                        Find Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="about" class="py-20 bg-brand-dark relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-32 h-32 bg-brand-red/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-48 h-48 bg-brand-gold/10 rounded-full blur-3xl"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="reveal">
+                        <h2 class="text-brand-red font-display text-4xl mb-2 tracking-wider uppercase">Our Story</h2>
+                        <h3 class="text-3xl md:text-5xl font-heading font-bold text-white mb-6 uppercase leading-tight">
+                            From Smoke to Steam <br> <span class="text-brand-gold">The Evolution</span></h3>
+                        <div class="space-y-4 text-gray-400 text-lg font-light leading-relaxed">
+                            <p>
+                                Yo Dumplings was born from a family passion and brought to life by <strong
+                                    class="text-white">Chef Jocelyn Dupree</strong>. After the success of the 509 Dine
+                                BBQ food truck, Jocelyn returned to her first culinary love—Asian cuisine.
+                            </p>
+                            <p>
+                                This led to a revolutionary pop-up brunch series that sold out instantly and laid the
+                                foundation for Yo Dumplings. Today, we are defined by the marriage of <strong
+                                    class="text-white">slow-smoked Southern BBQ</strong> and <strong
+                                    class="text-white">delicate Asian craftsmanship</strong>.
+                            </p>
+                            <div class="border-l-4 border-brand-red pl-4 mt-6 italic text-gray-300">
+                                "The result is comfort food with global soul and dumplings unlike anything you’ve tasted
+                                before."
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative reveal delay-200">
+                        <!-- Placeholder for Story Image - Using a gradient/text placeholder if no image available, or a stylized abstract visual -->
+                        <div class="relative rounded-lg overflow-hidden shadow-2xl border border-gray-800 group">
+                            <img src="https://images.unsplash.com/photo-1596627191435-061047453489?q=80&w=2574&auto=format&fit=crop"
+                                alt="Chef preparing dumplings"
+                                class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6">
+                                <span
+                                    class="bg-brand-gold text-brand-dark text-xs font-bold px-2 py-1 uppercase tracking-widest rounded-sm">Established
+                                    2024</span>
+                                <h4 class="text-white font-heading text-2xl mt-2 uppercase">Brick West Brewery</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Hours Section -->
+        <section id="location" class="py-20 bg-brand-gray border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="bg-brand-dark rounded-2xl p-8 md:p-12 shadow-2xl border border-gray-800 relative overflow-hidden reveal">
+                    <!-- Decor elements -->
+                    <div
+                        class="absolute top-0 right-0 w-64 h-full bg-brand-red/5 skew-x-12 transform origin-bottom-left">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
+                        <div>
+                            <h2 class="text-brand-gold font-display text-4xl mb-8 tracking-wider uppercase">Location &
+                                Hours</h2>
+
+                            <div class="space-y-8">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 bg-brand-red/20 p-3 rounded-lg text-brand-red mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-heading text-white uppercase mb-1">Yo Dumplings at Brick
+                                            West</h3>
+                                        <p class="text-gray-400">1318 W First Ave<br>Spokane, WA</p>
+                                        <p class="text-sm text-brand-gold mt-2 italic">Dine inside Brick West Brewery
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 bg-brand-red/20 p-3 rounded-lg text-brand-red mr-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-heading text-white uppercase mb-1">Operating Hours</h3>
+                                        <p class="text-gray-400"><span class="text-white font-bold">Open Seven Days a
+                                                Week</span><br>11:00 AM – 8:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8">
+                                <a href="https://maps.google.com/?q=1318+W+First+Ave+Spokane+WA" target="_blank"
+                                    class="inline-flex items-center text-brand-red hover:text-white font-bold uppercase tracking-widest transition-colors">
+                                    Get Directions
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div
+                            class="h-64 md:h-auto bg-gray-900 rounded-lg overflow-hidden relative group border border-gray-700">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2574&auto=format&fit=crop"
+                                alt="Restaurant Interior"
+                                class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span
+                                    class="text-white font-display text-2xl uppercase tracking-widest drop-shadow-md">Find
+                                    us at Brick West</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-20 bg-brand-dark relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-brand-gold font-display text-2xl tracking-[0.2em] uppercase mb-4">Yo Menu</h2>
+                    <h3 class="text-4xl md:text-6xl font-display font-bold text-white uppercase leading-none">Street
+                        Food <span class="text-brand-red">Fusion</span></h3>
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Dumplings with a twist. Comfort food with global
+                        soul.</p>
+                </div>
+
+                <!-- House Fusion Dumplings -->
+                <div class="mb-20 reveal">
+                    <div class="flex items-center mb-10">
+                        <h4 class="text-3xl font-heading text-white uppercase mr-6">House Fusion Dumplings</h4>
+                        <div class="h-1 bg-brand-red flex-grow opacity-50"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                        <!-- Item -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                <h5 class="text-xl font-bold text-white group-hover:text-brand-gold transition-colors">
+                                    Pepperoni Pizza Wonton (2)</h5>
+                                <span class="text-brand-gold font-display text-xl">$12</span>
+                            </div>
+                            <p class="text-gray-400 font-light">Crispy fried wonton shells, pepperoni, house-made
+                                buffalo mozzarella, 12-hour slow-roasted San Marzano-style pizza sauce, fresh basil.</p>
+                        </div>
+                        <!-- Item -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                <h5 class="text-xl font-bold text-white">The Wagyu “Yo” Burger Bao (2)</h5>
+                                <span class="text-brand-gold font-display text-xl">$15</span>
+                            </div>
+                            <p class="text-gray-400 font-light">Grilled Wagyu beef burger, melted cheddar, fluffy
+                                steamed bao buns, sweet and smoky house-made bacon tomato jam, McDowell’s Big Mick
+                                sauce.</p>
+                        </div>
+                        <!-- Item -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                <h5 class="text-xl font-bold text-white">Chorizo & Potato Pot Stickers</h5>
+                                <span class="text-brand-gold font-display text-xl">$11</span>
+                            </div>
+                            <p class="text-gray-400 font-light">Four pan-seared dumplings filled with spiced chorizo and
+                                tender potatoes, served with aromatic crunchy chili oil.</p>
+                        </div>
+                        <!-- Item -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                <h5 class="text-xl font-bold text-white">Texas Smoked Brisket Philly Eggrolls (2)</h5>
+                                <span class="text-brand-gold font-display text-xl">$12</span>
+                            </div>
+                            <p class="text-gray-400 font-light">Texas-smoked brisket, balsamic sautéed onions and
+                                peppers, melted provolone. Served with rosemary horseradish au jus. <span
+                                    class="text-brand-red text-sm font-bold ml-1">+ Fries $4</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snack Attack -->
+                <div class="mb-20 reveal">
+                    <div class="flex items-center mb-10">
+                        <div class="h-1 bg-brand-gold flex-grow opacity-50 mr-6"></div>
+                        <h4 class="text-3xl font-heading text-white uppercase">Snack Attack</h4>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div
+                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h5 class="text-lg font-bold text-white">Everything Edamame</h5>
+                                <span class="text-brand-gold font-bold">$7</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Pan-seared edamame coated in everything seasoning,
+                                house-made scallion soy glaze.</p>
+                        </div>
+                        <div
+                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h5 class="text-lg font-bold text-white">Bulgogi Beef Loaded Fries</h5>
+                                <span class="text-brand-gold font-bold">$23</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Spiral fries, Korean bulgogi beef, caramelized onions,
+                                scallions, toasted sesame seeds, sriracha aioli.</p>
+                        </div>
+                        <div
+                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h5 class="text-lg font-bold text-white">Elote “Street Corn” Dip</h5>
+                                <span class="text-brand-gold font-bold">$12</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Creamy roasted corn dip, cotija cheese, lime mayo, Hot
+                                Cheetos crumble, Tajín spice. With crispy wonton chips.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hand Helds -->
+                <div class="mb-20 reveal">
+                    <div class="flex items-center mb-10">
+                        <h4 class="text-3xl font-heading text-white uppercase mr-6">Hand Helds</h4>
+                        <div class="h-1 bg-brand-red flex-grow opacity-50"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
+                                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2629&auto=format&fit=crop"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                                    alt="Bao">
+                                <div
+                                    class="absolute top-2 right-2 bg-brand-dark px-2 py-1 text-xs font-bold text-white">
+                                    ADD FRIES +$4</div>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-1">Korean Brisket Tacos</h5>
+                            <span class="text-brand-gold font-display text-lg block mb-2">$12</span>
+                            <p class="text-gray-400 text-sm">Bao buns, slow-smoked Texas brisket, tangy Asian slaw,
+                                house sriracha mayo.</p>
+                        </div>
+                        <div>
+                            <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
+                                <img src="https://images.unsplash.com/photo-1626804475297-411dbb16b39b?q=80&w=2600&auto=format&fit=crop"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                                    alt="Fried Chicken Bao">
+                                <div
+                                    class="absolute top-2 right-2 bg-brand-dark px-2 py-1 text-xs font-bold text-white">
+                                    ADD FRIES +$4</div>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-1">KFC Fried Chicken Bao Bun</h5>
+                            <span class="text-brand-gold font-display text-lg block mb-2">$10</span>
+                            <p class="text-gray-400 text-sm">Crispy fried chicken thigh, crunchy Asian slaw, cilantro,
+                                spicy sriracha aioli. (Yes, Ken’s Fried Chicken).</p>
+                        </div>
+                        <div>
+                            <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
+                                <img src="https://images.unsplash.com/photo-1512485596614-77e84860d832?q=80&w=2664&auto=format&fit=crop"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                                    alt="Banh Mi">
+                                <div
+                                    class="absolute top-2 right-2 bg-brand-dark px-2 py-1 text-xs font-bold text-white">
+                                    ADD FRIES +$4</div>
+                            </div>
+                            <h5 class="text-xl font-bold text-white mb-1">Bánh Mì Char Siu Bao Bun</h5>
+                            <span class="text-brand-gold font-display text-lg block mb-2">$13</span>
+                            <p class="text-gray-400 text-sm">Smoked char siu pork belly, soy mayonnaise, pickled
+                                daikon/carrots, cilantro, jalapeños.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stars of the Show -->
+                <div class="mb-20 reveal">
+                    <div class="flex items-center mb-10">
+                        <div class="h-1 bg-brand-gold flex-grow opacity-50 mr-6"></div>
+                        <h4 class="text-3xl font-heading text-white uppercase">The Stars of the Show</h4>
+                        <div class="h-1 bg-brand-gold flex-grow opacity-50 ml-6"></div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="text-2xl font-bold text-white mb-1">Thai Peanut Butter Sticky Ribs</h5>
+                                    <p class="text-gray-400 mb-3 text-sm">Slow-smoked pork ribs, sweet chili, Thai red
+                                        curry, garlic, ginger, peanut BBQ glaze. With fries & sweet Thai ginger slaw.
+                                    </p>
+                                </div>
+                                <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="text-2xl font-bold text-white mb-1">Miso Sesame Chicken Caesar</h5>
+                                    <p class="text-gray-400 mb-3 text-sm">Ginger-marinated grilled chicken, romaine,
+                                        napa cabbage, crispy wonton strips, tomatoes, miso-tahini dressing.</p>
+                                </div>
+                                <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="text-2xl font-bold text-white mb-1">K-Pop Miso Glazed Chicken Rice Bowl
+                                    </h5>
+                                    <p class="text-gray-400 mb-2 text-sm">Seasoned rice, napa cabbage, carrots, baby bok
+                                        choy, soy-ginger pickled cucumbers, miso-ginger-citrus vinaigrette.</p>
+                                    <div class="text-xs text-brand-gold font-bold">Subs: Brisket +$4, Pulled Pork +$3,
+                                        Tofu +$4</div>
+                                </div>
+                                <span class="text-brand-gold font-display text-2xl ml-4">$13</span>
+                            </div>
+                        </div>
+                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="text-2xl font-bold text-white mb-1">Smokey Ya-Ka-Mein</h5>
+                                    <p class="text-gray-400 mb-3 text-sm">Smoky beef broth, Creole spices, soy sauce,
+                                        spaghetti noodles, Texas-style smoked brisket, green onions, smoked soft-boiled
+                                        egg.</p>
+                                </div>
+                                <span class="text-brand-gold font-display text-2xl ml-4">$16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="reveal max-w-2xl mx-auto text-center bg-brand-gray p-10 rounded-2xl border border-gray-800">
+                    <h3 class="text-brand-red font-display text-3xl mb-2">Save the Best for Last (Or Not)</h3>
+                    <h4 class="text-white text-4xl font-heading font-bold mb-4">Apple Pie Cheesecake Dumplings</h4>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Sweet fusion dumplings stuffed with warm apple pie
+                        filling, lightly fried, topped with creamy cheesecake and drizzled with house-made salted
+                        caramel sauce. <br><em class="text-sm text-gray-500">Created by Pastry Chef Brittney Moreau</em>
+                    </p>
+                    <span
+                        class="inline-block bg-brand-gold text-brand-dark font-bold text-2xl px-6 py-2 rounded-sm clip-path-slant">$7</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catering Section -->
+        <section id="catering" class="py-20 relative bg-[#1a1a1a]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 reveal">
+                        <img src="https://images.unsplash.com/photo-1555244168-e77a16e781de?q=80&w=2574&auto=format&fit=crop"
+                            alt="Catering Spread"
+                            class="rounded-lg shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
+                    </div>
+                    <div class="order-1 lg:order-2 reveal">
+                        <h2 class="text-brand-red font-display text-xl tracking-[0.2em] uppercase mb-2">Catering with Yo
+                        </h2>
+                        <h3 class="text-4xl md:text-5xl font-heading font-bold text-white uppercase mb-6">Celebrate With
+                            Us</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Yo Dumplings specializes in catering for events of all sizes—from weddings and corporate
+                            happy hours to tailgates and intimate gatherings.
+                            <br><br>
+                            We offer on-site catering in our three free <strong>Brick West</strong> event rooms or
+                            off-site full-service catering throughout the Spokane area.
+                        </p>
+
+                        <div class="bg-brand-dark p-6 border-l-4 border-brand-gold mb-8">
+                            <h4 class="text-white font-bold uppercase mb-2">Signature Packages</h4>
+                            <ul class="text-gray-400 space-y-2 text-sm">
+                                <li><strong class="text-brand-gold">• Grazing Station ($25/pp):</strong> Appetizers, bao
+                                    buns, fried rice.</li>
+                                <li><strong class="text-brand-gold">• Dumpling Bars ($25/pp):</strong> Build-your-own
+                                    stations.</li>
+                                <li><strong class="text-brand-gold">• The Fusion Feast ($30/pp):</strong> Edamame, Miso
+                                    Caesar, Udon, Fried Rice.</li>
+                                <li><strong class="text-brand-gold">• Weddings ($28/pp):</strong> Custom menus with Chef
+                                    Jocelyn.</li>
+                            </ul>
+                        </div>
+
+                        <a href="mailto:info@yodumplings.com"
+                            class="inline-block bg-white text-brand-dark font-heading font-bold uppercase px-8 py-4 tracking-widest hover:bg-brand-gold transition-colors clip-path-slant">
+                            Inquire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-16 pb-8 border-t border-brand-red/30 relative overflow-hidden">
+        <!-- Decor -->
+        <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
+                <!-- Brand -->
+                <div>
+                    <a href="#"
+                        class="font-display text-4xl text-white tracking-wider hover:text-brand-red transition-colors inline-block mb-4">YO
+                        DUMPLINGS</a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        World Street Fusion cuisine where dumplings from around the globe are reimagined with a fearless
+                        twist.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.047-1.407.06-4.123.06h-.08c-2.643 0-2.987-.009-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.067-.06-1.407-.06-4.123v-.08c0-2.643.009-2.987.06-4.043.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.407-.06 4.123-.06h.08zm-1.63 2h-1.67c-3.268 0-4.079.145-4.836.438-.635.247-1.096.71-1.346 1.345-.293.758-.438 1.569-.438 4.836v1.43c0 3.268.145 4.079.438 4.836.25.635.711 1.096 1.345 1.346.758.293 1.569.438 4.836.438h1.43c3.268 0 4.079-.145 4.836-.438.635-.25 1.096-.711 1.345-1.346.293-.758.438-1.569.438-4.836v-1.43c0-3.268-.145-4.079-.438-4.836-.25-.635-.711-1.096-1.345-1.346-.758-.293-1.569-.438-4.836-.438zm.725 4.275a3.725 3.725 0 110 7.45 3.725 3.725 0 010-7.45zm0 1.55a2.175 2.175 0 100 4.35 2.175 2.175 0 000-4.35zm5.34-3.66a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Locate -->
+                <div>
+                    <h4 class="text-white font-heading font-bold uppercase mb-4 tracking-widest text-lg">Locate</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li>1318 W First Ave, Spokane, WA</li>
+                        <li>(Inside Brick West Brewery)</li>
+                        <li>
+                            <a href="mailto:info@yodumplings.com"
+                                class="hover:text-brand-gold transition-colors">info@yodumplings.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div>
+                    <h4 class="text-white font-heading font-bold uppercase mb-4 tracking-widest text-lg">Hours</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex justify-between max-w-[200px] md:mx-0 mx-auto">
+                            <span>Every Day</span>
+                            <span class="text-white font-bold">11am - 8pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center md:flex md:justify-between md:items-center">
+                <p class="text-gray-500 text-xs font-display tracking-wider">© 2025 Yo Dumplings. All Rights Reserved.
+                    Powered by Yo.</p>
+                <div class="mt-4 md:mt-0 space-x-6 text-xs text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
