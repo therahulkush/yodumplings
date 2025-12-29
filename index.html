@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap"
         rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥟</text></svg>">
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -169,7 +171,7 @@
                     <div class="relative reveal delay-200">
                         <!-- Placeholder for Story Image - Using a gradient/text placeholder if no image available, or a stylized abstract visual -->
                         <div class="relative rounded-lg overflow-hidden shadow-2xl border border-gray-800 group">
-                            <img src="https://images.unsplash.com/photo-1596627191435-061047453489?q=80&w=2574&auto=format&fit=crop"
+                            <img src="https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?q=80&w=2670&auto=format&fit=crop"
                                 alt="Chef preparing dumplings"
                                 class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -252,8 +254,8 @@
                         <!-- Map Placeholder -->
                         <div
                             class="h-64 md:h-auto bg-gray-900 rounded-lg overflow-hidden relative group border border-gray-700">
-                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2574&auto=format&fit=crop"
-                                alt="Restaurant Interior"
+                            <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=2669&auto=format&fit=crop"
+                                alt="Map Location"
                                 class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <span
@@ -284,45 +286,64 @@
                         <h4 class="text-3xl font-heading text-white uppercase mr-6">House Fusion Dumplings</h4>
                         <div class="h-1 bg-brand-red flex-grow opacity-50"></div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
                         <!-- Item -->
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
-                                <h5 class="text-xl font-bold text-white group-hover:text-brand-gold transition-colors">
-                                    Pepperoni Pizza Wonton (2)</h5>
-                                <span class="text-brand-gold font-display text-xl">$12</span>
+                        <div class="flex gap-4">
+                            <img src="yodumplings/images/Pepperoni Pizza Wonton (2).jpg"
+                                class="w-24 h-24 object-cover rounded-lg shadow-lg" alt="Pizza Wonton">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                    <h5
+                                        class="text-xl font-bold text-white group-hover:text-brand-gold transition-colors">
+                                        Pepperoni Pizza Wonton (2)</h5>
+                                    <span class="text-brand-gold font-display text-xl">$12</span>
+                                </div>
+                                <p class="text-gray-400 font-light text-sm">Crispy fried wonton shells, pepperoni,
+                                    house-made buffalo mozzarella, 12-hour slow-roasted San Marzano-style pizza sauce,
+                                    fresh basil.</p>
                             </div>
-                            <p class="text-gray-400 font-light">Crispy fried wonton shells, pepperoni, house-made
-                                buffalo mozzarella, 12-hour slow-roasted San Marzano-style pizza sauce, fresh basil.</p>
                         </div>
                         <!-- Item -->
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
-                                <h5 class="text-xl font-bold text-white">The Wagyu “Yo” Burger Bao (2)</h5>
-                                <span class="text-brand-gold font-display text-xl">$15</span>
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2629&auto=format&fit=crop"
+                                class="w-24 h-24 object-cover rounded-lg shadow-lg" alt="Burger Bao">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                    <h5 class="text-xl font-bold text-white">The Wagyu “Yo” Burger Bao (2)</h5>
+                                    <span class="text-brand-gold font-display text-xl">$15</span>
+                                </div>
+                                <p class="text-gray-400 font-light text-sm">Grilled Wagyu beef burger, melted cheddar,
+                                    fluffy steamed bao buns, sweet and smoky house-made bacon tomato jam, McDowell’s Big
+                                    Mick sauce.</p>
                             </div>
-                            <p class="text-gray-400 font-light">Grilled Wagyu beef burger, melted cheddar, fluffy
-                                steamed bao buns, sweet and smoky house-made bacon tomato jam, McDowell’s Big Mick
-                                sauce.</p>
                         </div>
                         <!-- Item -->
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
-                                <h5 class="text-xl font-bold text-white">Chorizo & Potato Pot Stickers</h5>
-                                <span class="text-brand-gold font-display text-xl">$11</span>
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=2670&auto=format&fit=crop"
+                                class="w-24 h-24 object-cover rounded-lg shadow-lg" alt="Pot Stickers">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                    <h5 class="text-xl font-bold text-white">Chorizo & Potato Pot Stickers</h5>
+                                    <span class="text-brand-gold font-display text-xl">$11</span>
+                                </div>
+                                <p class="text-gray-400 font-light text-sm">Four pan-seared dumplings filled with spiced
+                                    chorizo and tender potatoes, served with aromatic crunchy chili oil.</p>
                             </div>
-                            <p class="text-gray-400 font-light">Four pan-seared dumplings filled with spiced chorizo and
-                                tender potatoes, served with aromatic crunchy chili oil.</p>
                         </div>
                         <!-- Item -->
-                        <div>
-                            <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
-                                <h5 class="text-xl font-bold text-white">Texas Smoked Brisket Philly Eggrolls (2)</h5>
-                                <span class="text-brand-gold font-display text-xl">$12</span>
+                        <div class="flex gap-4">
+                            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=2670&auto=format&fit=crop"
+                                class="w-24 h-24 object-cover rounded-lg shadow-lg" alt="Eggrolls">
+                            <div class="flex-1">
+                                <div class="flex justify-between items-baseline mb-2 border-b border-gray-800 pb-2">
+                                    <h5 class="text-xl font-bold text-white">Texas Smoked Brisket Philly Eggrolls (2)
+                                    </h5>
+                                    <span class="text-brand-gold font-display text-xl">$12</span>
+                                </div>
+                                <p class="text-gray-400 font-light text-sm">Texas-smoked brisket, balsamic sautéed
+                                    onions and peppers, melted provolone. Served with rosemary horseradish au jus. <span
+                                        class="text-brand-red text-sm font-bold ml-1">+ Fries $4</span></p>
                             </div>
-                            <p class="text-gray-400 font-light">Texas-smoked brisket, balsamic sautéed onions and
-                                peppers, melted provolone. Served with rosemary horseradish au jus. <span
-                                    class="text-brand-red text-sm font-bold ml-1">+ Fries $4</span></p>
                         </div>
                     </div>
                 </div>
@@ -335,31 +356,51 @@
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div
-                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h5 class="text-lg font-bold text-white">Everything Edamame</h5>
-                                <span class="text-brand-gold font-bold">$7</span>
+                            class="bg-brand-gray pb-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors overflow-hidden group">
+                            <div class="bg-gray-800 h-40 mb-4 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1528738064262-9f834cbdfda1?q=80&w=2670&auto=format&fit=crop"
+                                    alt="Edamame"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
-                            <p class="text-gray-400 text-sm">Pan-seared edamame coated in everything seasoning,
-                                house-made scallion soy glaze.</p>
+                            <div class="px-6">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h5 class="text-lg font-bold text-white">Everything Edamame</h5>
+                                    <span class="text-brand-gold font-bold">$7</span>
+                                </div>
+                                <p class="text-gray-400 text-sm">Pan-seared edamame coated in everything seasoning,
+                                    house-made scallion soy glaze.</p>
+                            </div>
                         </div>
                         <div
-                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h5 class="text-lg font-bold text-white">Bulgogi Beef Loaded Fries</h5>
-                                <span class="text-brand-gold font-bold">$23</span>
+                            class="bg-brand-gray pb-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors overflow-hidden group">
+                            <div class="bg-gray-800 h-40 mb-4 overflow-hidden">
+                                <img src="yodumplings/images/loaded fries.jpg" alt="Loaded Fries"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
-                            <p class="text-gray-400 text-sm">Spiral fries, Korean bulgogi beef, caramelized onions,
-                                scallions, toasted sesame seeds, sriracha aioli.</p>
+                            <div class="px-6">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h5 class="text-lg font-bold text-white">Bulgogi Beef Loaded Fries</h5>
+                                    <span class="text-brand-gold font-bold">$23</span>
+                                </div>
+                                <p class="text-gray-400 text-sm">Spiral fries, Korean bulgogi beef, caramelized onions,
+                                    scallions, toasted sesame seeds, sriracha aioli.</p>
+                            </div>
                         </div>
                         <div
-                            class="bg-brand-gray p-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors">
-                            <div class="flex justify-between items-baseline mb-2">
-                                <h5 class="text-lg font-bold text-white">Elote “Street Corn” Dip</h5>
-                                <span class="text-brand-gold font-bold">$12</span>
+                            class="bg-brand-gray pb-6 rounded-lg border border-gray-800 hover:border-brand-gold/50 transition-colors overflow-hidden group">
+                            <div class="bg-gray-800 h-40 mb-4 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=2670&auto=format&fit=crop"
+                                    alt="Street Corn"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                             </div>
-                            <p class="text-gray-400 text-sm">Creamy roasted corn dip, cotija cheese, lime mayo, Hot
-                                Cheetos crumble, Tajín spice. With crispy wonton chips.</p>
+                            <div class="px-6">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h5 class="text-lg font-bold text-white">Elote “Street Corn” Dip</h5>
+                                    <span class="text-brand-gold font-bold">$12</span>
+                                </div>
+                                <p class="text-gray-400 text-sm">Creamy roasted corn dip, cotija cheese, lime mayo, Hot
+                                    Cheetos crumble, Tajín spice. With crispy wonton chips.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,7 +414,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
                             <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
-                                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2629&auto=format&fit=crop"
+                                <img src="yodumplings/images/Korean Brisket Tacos.jpg"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                                     alt="Bao">
                                 <div
@@ -387,7 +428,7 @@
                         </div>
                         <div>
                             <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
-                                <img src="https://images.unsplash.com/photo-1626804475297-411dbb16b39b?q=80&w=2600&auto=format&fit=crop"
+                                <img src="yodumplings/images/Fried Chicken Bao.webp"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                                     alt="Fried Chicken Bao">
                                 <div
@@ -401,7 +442,7 @@
                         </div>
                         <div>
                             <div class="relative h-48 mb-4 overflow-hidden rounded-md group">
-                                <img src="https://images.unsplash.com/photo-1512485596614-77e84860d832?q=80&w=2664&auto=format&fit=crop"
+                                <img src="https://images.unsplash.com/photo-1619860860774-1e2e17343432?q=80&w=2670&auto=format&fit=crop"
                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                                     alt="Banh Mi">
                                 <div
@@ -424,64 +465,99 @@
                         <div class="h-1 bg-brand-gold flex-grow opacity-50 ml-6"></div>
                     </div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h5 class="text-2xl font-bold text-white mb-1">Thai Peanut Butter Sticky Ribs</h5>
-                                    <p class="text-gray-400 mb-3 text-sm">Slow-smoked pork ribs, sweet chili, Thai red
-                                        curry, garlic, ginger, peanut BBQ glaze. With fries & sweet Thai ginger slaw.
-                                    </p>
+                        <div
+                            class="bg-neutral-900/50 rounded-xl border-l-4 border-brand-red overflow-hidden flex flex-col md:flex-row">
+                            <div class="w-full md:w-1/3 h-48 md:h-auto relative">
+                                <img src="yodumplings/images/Thai Peanut Butter Sticky Ribs.jpg"
+                                    class="absolute inset-0 w-full h-full object-cover" alt="Ribs">
+                            </div>
+                            <div class="p-6 md:w-2/3">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-2xl font-bold text-white mb-1">Thai Peanut Butter Sticky Ribs
+                                        </h5>
+                                        <p class="text-gray-400 mb-3 text-sm">Slow-smoked pork ribs, sweet chili, Thai
+                                            red curry, garlic, ginger, peanut BBQ glaze. With fries & sweet Thai ginger
+                                            slaw.</p>
+                                    </div>
+                                    <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
                                 </div>
-                                <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
                             </div>
                         </div>
-                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h5 class="text-2xl font-bold text-white mb-1">Miso Sesame Chicken Caesar</h5>
-                                    <p class="text-gray-400 mb-3 text-sm">Ginger-marinated grilled chicken, romaine,
-                                        napa cabbage, crispy wonton strips, tomatoes, miso-tahini dressing.</p>
+                        <div
+                            class="bg-neutral-900/50 rounded-xl border-l-4 border-brand-red overflow-hidden flex flex-col md:flex-row">
+                            <div class="w-full md:w-1/3 h-48 md:h-auto relative">
+                                <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=2670&auto=format&fit=crop"
+                                    class="absolute inset-0 w-full h-full object-cover" alt="Caesar Salad">
+                            </div>
+                            <div class="p-6 md:w-2/3">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-2xl font-bold text-white mb-1">Miso Sesame Chicken Caesar</h5>
+                                        <p class="text-gray-400 mb-3 text-sm">Ginger-marinated grilled chicken, romaine,
+                                            napa cabbage, crispy wonton strips, tomatoes, miso-tahini dressing.</p>
+                                    </div>
+                                    <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
                                 </div>
-                                <span class="text-brand-gold font-display text-2xl ml-4">$24</span>
                             </div>
                         </div>
-                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h5 class="text-2xl font-bold text-white mb-1">K-Pop Miso Glazed Chicken Rice Bowl
-                                    </h5>
-                                    <p class="text-gray-400 mb-2 text-sm">Seasoned rice, napa cabbage, carrots, baby bok
-                                        choy, soy-ginger pickled cucumbers, miso-ginger-citrus vinaigrette.</p>
-                                    <div class="text-xs text-brand-gold font-bold">Subs: Brisket +$4, Pulled Pork +$3,
-                                        Tofu +$4</div>
+                        <div
+                            class="bg-neutral-900/50 rounded-xl border-l-4 border-brand-red overflow-hidden flex flex-col md:flex-row">
+                            <div class="w-full md:w-1/3 h-48 md:h-auto relative">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=2669&auto=format&fit=crop"
+                                    class="absolute inset-0 w-full h-full object-cover" alt="Rice Bowl">
+                            </div>
+                            <div class="p-6 md:w-2/3">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-2xl font-bold text-white mb-1">K-Pop Miso Glazed Chicken Rice
+                                            Bowl</h5>
+                                        <p class="text-gray-400 mb-2 text-sm">Seasoned rice, napa cabbage, carrots, baby
+                                            bok choy, soy-ginger pickled cucumbers, miso-ginger-citrus vinaigrette.</p>
+                                        <div class="text-xs text-brand-gold font-bold">Subs: Brisket +$4, Pulled Pork
+                                            +$3, Tofu +$4</div>
+                                    </div>
+                                    <span class="text-brand-gold font-display text-2xl ml-4">$13</span>
                                 </div>
-                                <span class="text-brand-gold font-display text-2xl ml-4">$13</span>
                             </div>
                         </div>
-                        <div class="bg-neutral-900/50 p-6 rounded-xl border-l-4 border-brand-red">
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h5 class="text-2xl font-bold text-white mb-1">Smokey Ya-Ka-Mein</h5>
-                                    <p class="text-gray-400 mb-3 text-sm">Smoky beef broth, Creole spices, soy sauce,
-                                        spaghetti noodles, Texas-style smoked brisket, green onions, smoked soft-boiled
-                                        egg.</p>
+                        <div
+                            class="bg-neutral-900/50 rounded-xl border-l-4 border-brand-red overflow-hidden flex flex-col md:flex-row">
+                            <div class="w-full md:w-1/3 h-48 md:h-auto relative">
+                                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=2670&auto=format&fit=crop"
+                                    class="absolute inset-0 w-full h-full object-cover" alt="Noodle Soup">
+                            </div>
+                            <div class="p-6 md:w-2/3">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h5 class="text-2xl font-bold text-white mb-1">Smokey Ya-Ka-Mein</h5>
+                                        <p class="text-gray-400 mb-3 text-sm">Smoky beef broth, Creole spices, soy
+                                            sauce, spaghetti noodles, Texas-style smoked brisket, green onions, smoked
+                                            soft-boiled egg.</p>
+                                    </div>
+                                    <span class="text-brand-gold font-display text-2xl ml-4">$16</span>
                                 </div>
-                                <span class="text-brand-gold font-display text-2xl ml-4">$16</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Desserts -->
-                <div class="reveal max-w-2xl mx-auto text-center bg-brand-gray p-10 rounded-2xl border border-gray-800">
-                    <h3 class="text-brand-red font-display text-3xl mb-2">Save the Best for Last (Or Not)</h3>
-                    <h4 class="text-white text-4xl font-heading font-bold mb-4">Apple Pie Cheesecake Dumplings</h4>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Sweet fusion dumplings stuffed with warm apple pie
-                        filling, lightly fried, topped with creamy cheesecake and drizzled with house-made salted
-                        caramel sauce. <br><em class="text-sm text-gray-500">Created by Pastry Chef Brittney Moreau</em>
-                    </p>
-                    <span
-                        class="inline-block bg-brand-gold text-brand-dark font-bold text-2xl px-6 py-2 rounded-sm clip-path-slant">$7</span>
+                <div
+                    class="reveal max-w-4xl mx-auto text-center bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?q=80&w=2574&auto=format&fit=crop"
+                        class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-700"
+                        alt="Apple Pie Background">
+                    <div class="relative z-10 p-12">
+                        <h3 class="text-brand-red font-display text-3xl mb-2">Save the Best for Last (Or Not)</h3>
+                        <h4 class="text-white text-4xl font-heading font-bold mb-4">Apple Pie Cheesecake Dumplings</h4>
+                        <p class="text-gray-200 mb-6 leading-relaxed text-lg shadow-black drop-shadow-md">Sweet fusion
+                            dumplings stuffed with warm apple pie filling, lightly fried, topped with creamy cheesecake
+                            and drizzled with house-made salted caramel sauce. <br><em
+                                class="text-sm text-gray-400">Created by Pastry Chef Brittney Moreau</em></p>
+                        <span
+                            class="inline-block bg-brand-gold text-brand-dark font-bold text-2xl px-6 py-2 rounded-sm clip-path-slant shadow-lg">$7</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -491,8 +567,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="order-2 lg:order-1 reveal">
-                        <img src="https://images.unsplash.com/photo-1555244168-e77a16e781de?q=80&w=2574&auto=format&fit=crop"
-                            alt="Catering Spread"
+                        <img src="yodumplings/images/catering spread.jpg" alt="Catering Spread"
                             class="rounded-lg shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
                     </div>
                     <div class="order-1 lg:order-2 reveal">
